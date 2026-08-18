@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f1f3f6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2874f0;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo-section .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 75px;
+    height: 20px;
+}
+
+.plus-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.plus-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+}
+
+/* Search Bar */
+.search-section {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 30px;
+}
+
+.search-bar {
+    display: flex;
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #2874f0;
+}
+
+.search-btn i {
+    font-size: 16px;
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.login-btn {
+    background-color: white;
+    color: #2874f0;
+    padding: 5px 40px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Categories Bar */
+.categories-bar {
+    background: white;
+    padding: 12px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.categories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+}
+
+.category-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.category-item span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Banner Section */
+.banner-section {
+    padding: 10px;
+}
+
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+/* Product Sections */
+.deals-section,
+.fashion-section,
+.mobiles-section {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.deals-container,
+.fashion-container,
+.mobiles-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.deals-header,
+.fashion-header,
+.mobiles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.deals-header h2,
+.fashion-header h2,
+.mobiles-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.view-all {
+    background-color: #2874f0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+.view-all:hover {
+    background-color: #1e5bbd;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.product-card .discount {
+    font-size: 13px;
+    color: #388e3c;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background-color: #172337;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #878787;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #2874f0;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-top: 1px solid #454d5e;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #878787;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+    
+    .search-section {
+        order: 3;
+        max-width: 100%;
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+    
+    .login-btn {
+        padding: 5px 20px;
+    }
+    
+    .categories-container {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+    .category-item {
+        min-width: 80px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
